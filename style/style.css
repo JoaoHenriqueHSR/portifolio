@@ -1,0 +1,141 @@
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    margin:3% 21% ;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+    font-size: 1.5rem;
+}
+
+.menu__link{
+    color: var(--cor-terciaria);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu__link:hover{
+    color: var(--cor-secundaria);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5% 21%;
+    gap: 40px;
+}
+
+.main__secao{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.main__secao__titulo{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.destaque-do-titulo {
+    color: var(--cor-terciaria);
+}
+
+.main__secao__paragrafos{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aparencia__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.aparencia__links__titulo{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.aparencia__links__link{
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.aparencia__links__link:hover{
+    background-color: #272727;
+    padding: 4.5%;
+}
+
+.main__imagem{
+    width: 50%;
+}
+
+.creditos{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 23.50px;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5rem;
+}
+
+
+
+
+.main__titulo__about{
+    font-family: 'Krona one',sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 1200px){
+
+     .cabecalho{
+        padding: 10%;
+        
+    }
+    
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .main{
+        flex-direction: column-reverse;
+        padding:3.5% 5%;
+    }
+
+    .main__secao{
+        width: auto;
+    }
+   
+}
